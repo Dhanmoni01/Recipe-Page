@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: #F4EDE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px 0;
+    
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    
+}
+
+.preparation-time {
+    background-color: #FDECEC;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.preparation-time h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+.preparation-time li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+ol li {
+    margin-bottom: 15px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+     /* Should be removed. Only for demonstration */
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .preparation-time {
+        padding: 10px;
+    }
+
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .nutrition .row {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1440px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    .preparation-time {
+        padding: 12px;
+    }
+
+    .column {
+        width: 48%;
+    }
+}
